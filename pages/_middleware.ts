@@ -17,7 +17,7 @@ export default function middleware(req: NextRequest) {
   if (!pathname.includes(".") && !pathname.startsWith("/api")) {
     if (pathname === "/") {
       url.pathname = `/redirectHere`;
-      console.log("will rewrite to", url.pathname);
+      console.log("will rewrite to", JSON.stringify(url));
       return NextResponse.rewrite(url);
     }
   }
