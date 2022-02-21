@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export default function middleware(req: NextRequest) {
   const url = req.nextUrl.clone(); // clone the request url
-  const { locale, pathname } = req.nextUrl; // get pathname of request (e.g. /products/:id)
+  const { locale, pathname, hostname: nextHost } = req.nextUrl; // get pathname of request (e.g. /products/:id)
   const hostname = req.headers.get("host"); // get hostname of request (e.g. solar.otovo.com)
 
   console.log(
@@ -10,6 +10,8 @@ export default function middleware(req: NextRequest) {
     locale,
     "pathname:",
     pathname,
+    "\nnextHost:",
+    nextHost,
     "\nhostname:",
     hostname
   );
