@@ -22,27 +22,25 @@ export default function middleware(req: NextRequest) {
   // //   .find((bu) => bu.locale === locale);
   // // console.log("found bu", buConfig);
 
-  // if (!pathname.includes(".") && !pathname.startsWith("/api")) {
-  // url.pathname = `/_sites${pathname}`;
-  console.log(
-    `2: locale is ${locale} will NOT rewrite to`,
-    JSON.stringify(url)
-  );
-  // return NextResponse.rewrite(url);
-  //   if (pathname === "/") {
-  //     url.pathname = `/_sites/redirectHere`;
-  //     console.log(
-  //       `1: locale is ${locale} will rewrite to`,
-  //       JSON.stringify(url)
-  //     );
-  //     return NextResponse.rewrite(url);
-  //   }
-  //   // if (!buConfig) {
-  //   //   return NextResponse.redirect("/404");
-  //   // }
-  //   url.pathname = `/_sites${pathname}`;
-  //   console.log(`2: locale is ${locale} will rewrite to`, JSON.stringify(url));
-  //   return NextResponse.rewrite(url);
-  // }
+  if (!pathname.includes(".") && !pathname.startsWith("/api")) {
+    url.pathname = `/_sites${pathname}`;
+    console.log(`2: locale is ${locale} will rewrite to`, JSON.stringify(url));
+    return NextResponse.rewrite(url);
+    // return NextResponse.rewrite(url);
+    //   if (pathname === "/") {
+    //     url.pathname = `/_sites/redirectHere`;
+    //     console.log(
+    //       `1: locale is ${locale} will rewrite to`,
+    //       JSON.stringify(url)
+    //     );
+    //     return NextResponse.rewrite(url);
+    //   }
+    //   // if (!buConfig) {
+    //   //   return NextResponse.redirect("/404");
+    //   // }
+    //   url.pathname = `/_sites${pathname}`;
+    //   console.log(`2: locale is ${locale} will rewrite to`, JSON.stringify(url));
+    //   return NextResponse.rewrite(url);
+  }
   return NextResponse.next();
 }
