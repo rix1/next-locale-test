@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         {locale === "nb-no" ? (
           <h1 className={styles.title}>
-            B: du burde vært her <small>dette er hjemmesiden</small>
+            B: du burde vært her. <br /> <small>dette er hjemmesiden</small>
           </h1>
         ) : (
           <h1 className={styles.title}>

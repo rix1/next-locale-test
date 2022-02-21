@@ -15,12 +15,12 @@ const nextConfig = {
     return [
       {
         source: "/no/:path*",
-        destination: "/no-nb/:path*",
+        destination: "/nb-no/:path*",
         permanent: false,
       },
       {
         source: "/nb/:path*",
-        destination: "/no-nb/:path*",
+        destination: "/nb-no/:path*",
         permanent: false,
       },
       {
