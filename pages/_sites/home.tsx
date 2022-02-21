@@ -1,12 +1,11 @@
 import { useRouter } from "next/router";
-import config from "../../../config.json";
+import config from "../../config.json";
 
 type homeProps = {
   children: React.ReactNode;
 };
 
 const Home = ({ children }: homeProps) => {
-  console.log("home says hi");
   const { query, locale } = useRouter();
 
   return (
