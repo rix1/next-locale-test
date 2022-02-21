@@ -23,6 +23,9 @@ export default function middleware(req: NextRequest) {
   // // console.log("found bu", buConfig);
 
   if (!pathname.includes(".") && !pathname.startsWith("/api")) {
+    if (pathname.includes("_sites")) {
+      return NextResponse.rewrite(url);
+    }
     url.pathname = `/_sites${pathname}`;
     console.log(`2: locale is ${locale} will rewrite to`, JSON.stringify(url));
     return NextResponse.rewrite(url);
