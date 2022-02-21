@@ -15,12 +15,6 @@ const nextConfig = {
     console.log("redirecting stuff", stuff);
     return [
       {
-        source: "/en-gb/nb/:path*",
-        destination: "/nb-no/:path*",
-        permanent: false,
-        locale: false,
-      },
-      {
         source: "/no/:path*",
         destination: "/nb-no/:path*",
         permanent: false,

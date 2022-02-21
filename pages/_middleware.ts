@@ -32,7 +32,6 @@ export default function middleware(req: NextRequest) {
     if (!buConfig) {
       return NextResponse.redirect("/404");
     }
-    // const extra = locale === "en-gb" ? "/en-gb" : "";
 
     url.pathname = `/_sites/${buConfig.slug}${pathname}`;
     console.log("2: will rewrite to", JSON.stringify(url));
