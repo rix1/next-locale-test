@@ -18,6 +18,7 @@ const nextConfig = {
         source: "/no/:path*",
         destination: "/nb-no/:path*",
         permanent: false,
+        locale: false,
       },
       {
         source: "/nb/:path*",
