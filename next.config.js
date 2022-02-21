@@ -7,7 +7,7 @@ const nextConfig = {
   i18n: {
     localeDetection: false,
     locales: config
-      .filter((unit) => unit.type === "OWN_AND_OPERATE")
+      .filter((bu) => ["OWN_AND_OPERATE", "WHITE_LABEL"].includes(bu.type))
       .map((businessUnit) => businessUnit.locale),
     defaultLocale: "en-gb",
   },
@@ -37,6 +37,11 @@ const nextConfig = {
       {
         source: "/de/:path*",
         destination: "/de-de/:path*",
+        permanent: false,
+      },
+      {
+        source: "/fr/:path*",
+        destination: "/fr-fr/:path*",
         permanent: false,
       },
       {
