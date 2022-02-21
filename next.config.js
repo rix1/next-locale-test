@@ -23,6 +23,7 @@ const nextConfig = {
         source: "/nb/:path*",
         destination: "/nb-no/:path*",
         permanent: false,
+        locale: false,
       },
       {
         source: "/se/:path*",
