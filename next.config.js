@@ -6,9 +6,15 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
     localeDetection: false,
-    locales: config
-      .filter((bu) => ["OWN_AND_OPERATE", "WHITE_LABEL"].includes(bu.type))
-      .map((businessUnit) => businessUnit.locale),
+    locales: [
+      "nb",
+      "no",
+      "se",
+      "sv",
+      ...config
+        .filter((bu) => ["OWN_AND_OPERATE", "WHITE_LABEL"].includes(bu.type))
+        .map((businessUnit) => businessUnit.locale),
+    ],
     defaultLocale: "en-gb",
   },
   async redirects(stuff) {
