@@ -1,0 +1,189 @@
+[
+  {
+    "slug": "otovo-global",
+    "market": "gb",
+    "market_name": "Otovo Global",
+    "type": "OWN_AND_OPERATE",
+    "locale": "en-gb",
+    "domain": "co.uk",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-it/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-it/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/it"
+  },
+  {
+    "slug": "otovo-it",
+    "market": "it",
+    "market_name": "Otovo IT",
+    "type": "OWN_AND_OPERATE",
+    "locale": "it-it",
+    "domain": "it",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-it/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-it/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/it"
+  },
+  {
+    "slug": "otovo-fr",
+    "market": "fr",
+    "market_name": "Otovo FR",
+    "type": "OWN_AND_OPERATE",
+    "locale": "fr-fr",
+    "domain": "fr",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-fr/iswt.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-fr/InSunWeTrustLogo.png",
+    "sales_flow_url": "https://solar.otovo.com/fr"
+  },
+  {
+    "slug": "otovo-de",
+    "market": "de",
+    "market_name": "Otovo DE",
+    "type": "OWN_AND_OPERATE",
+    "locale": "de-de",
+    "domain": "de",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-de/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-de/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/de-de"
+  },
+  {
+    "slug": "otovo-es",
+    "market": "es",
+    "market_name": "Otovo ES",
+    "type": "OWN_AND_OPERATE",
+    "locale": "es-es",
+    "domain": "es",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-es/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-es/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/es"
+  },
+  {
+    "slug": "otovo-pl",
+    "market": "pl",
+    "market_name": "Otovo PL",
+    "type": "OWN_AND_OPERATE",
+    "locale": "pl-pl",
+    "domain": "pl",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-pl/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-pl/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/pl"
+  },
+  {
+    "slug": "otovo-no",
+    "market": "no",
+    "market_name": "Otovo NO",
+    "type": "OWN_AND_OPERATE",
+    "locale": "nb-no",
+    "domain": "no",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-no/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-no/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/nb"
+  },
+  {
+    "slug": "otovo-se",
+    "market": "se",
+    "market_name": "Otovo SE",
+    "type": "OWN_AND_OPERATE",
+    "locale": "sv-se",
+    "domain": "se",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-se/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-se/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/sv"
+  },
+  {
+    "slug": "iberdrola-fr",
+    "market": "fr",
+    "market_name": "Iberdrola",
+    "type": "PLATFORM_PARTNER",
+    "locale": "fr-fr",
+    "domain": "fr",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/iberdrola-fr/Iberdrola-Symbol-sm.png",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/iberdrola-fr/iberdrola.png",
+    "sales_flow_url": "https://solar.otovo.com/fr"
+  },
+  {
+    "slug": "otovo-at",
+    "market": "at",
+    "market_name": "Otovo AT",
+    "type": "OWN_AND_OPERATE",
+    "locale": "de-at",
+    "domain": "at",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-at/otovo-favicon.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-at/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/de-at"
+  },
+  {
+    "slug": "otovo-br",
+    "market": "br",
+    "market_name": "Holu",
+    "type": "WHITE_LABEL",
+    "locale": "pt-br",
+    "domain": "br",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-br/favicon.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/holu-br/holu-sm.png",
+    "sales_flow_url": "https://solar.otovo.com/pt-br"
+  },
+  {
+    "slug": "alterna-es",
+    "market": "es",
+    "market_name": "Alterna",
+    "type": "LEAD_PARTNER",
+    "locale": "es-es",
+    "domain": "es",
+    "favicon": null,
+    "logo": null,
+    "sales_flow_url": "https://solar.otovo.com/es"
+  },
+  {
+    "slug": "mr-kilowatt-it",
+    "market": "it",
+    "market_name": "Mr. Kilowatt",
+    "type": "LEAD_PARTNER",
+    "locale": "it-it",
+    "domain": "it",
+    "favicon": null,
+    "logo": null,
+    "sales_flow_url": "https://solar.otovo.com/it"
+  },
+  {
+    "slug": "enko-teams-es",
+    "market": "es",
+    "market_name": "Enko Teams",
+    "type": "LEAD_PARTNER",
+    "locale": "es-es",
+    "domain": "es",
+    "favicon": null,
+    "logo": null,
+    "sales_flow_url": "https://solar.otovo.com/es"
+  },
+  {
+    "slug": "selectra-fr",
+    "market": "fr",
+    "market_name": "Selectra",
+    "type": "LEAD_PARTNER",
+    "locale": "fr-fr",
+    "domain": "fr",
+    "favicon": null,
+    "logo": null,
+    "sales_flow_url": "https://solar.otovo.com/fr"
+  },
+  {
+    "slug": "vattenfall-demo-se",
+    "market": "se",
+    "market_name": "Vattenfall Demo",
+    "type": "LEAD_PARTNER",
+    "locale": "sv-se",
+    "domain": "se",
+    "favicon": null,
+    "logo": null,
+    "sales_flow_url": "https://solar.otovo.com/sv"
+  },
+  {
+    "slug": "probitalia-it",
+    "market": "it",
+    "market_name": "Probitalia",
+    "type": "LEAD_PARTNER",
+    "locale": "it-it",
+    "domain": "it",
+    "favicon": null,
+    "logo": null,
+    "sales_flow_url": "https://solar.otovo.com/it"
+  }
+]
