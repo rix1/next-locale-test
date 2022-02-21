@@ -17,18 +17,25 @@ export default function middleware(req: NextRequest) {
     hostname
   );
 
+  if (locale === "default") {
+    console.log("LOCALE NOT RESOLVED");
+  }
+  {
+    console.log("LOCALE RESOLVED: ", locale);
+  }
+
   // // const buConfig = config
   // //   .filter((bu) => ["OWN_AND_OPERATE", "WHITE_LABEL"].includes(bu.type))
   // //   .find((bu) => bu.locale === locale);
   // // console.log("found bu", buConfig);
 
   if (!pathname.includes(".") && !pathname.startsWith("/api")) {
-    if (pathname.includes("_sites")) {
-      return NextResponse.rewrite(url);
-    }
-    url.pathname = `/_sites${pathname}`;
-    console.log(`2: locale is ${locale} will rewrite to`, JSON.stringify(url));
-    return NextResponse.rewrite(url);
+    // if (pathname.includes("_sites")) {
+    //   return NextResponse.rewrite(url);
+    // }
+    // url.pathname = `/_sites${pathname}`;
+    // console.log(`2: locale is ${locale} will rewrite to`, JSON.stringify(url));
+    // return NextResponse.rewrite(url);
     // return NextResponse.rewrite(url);
     //   if (pathname === "/") {
     //     url.pathname = `/_sites/redirectHere`;
