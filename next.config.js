@@ -11,7 +11,8 @@ const nextConfig = {
       .map((businessUnit) => businessUnit.locale),
     defaultLocale: "en-gb",
   },
-  async redirects() {
+  async redirects(stuff) {
+    console.log("redirecting stuff", stuff);
     return [
       {
         source: "/no/:path*",
@@ -62,12 +63,13 @@ const nextConfig = {
       //   source: "/de/:path*",
       //   destination: "/de-at/:path*",
       //   permanent: false,
+
       // },
       // {
       //   source: `/${DEFAULT_MARKET.locale}`,
       //   destination: "/welcome",
       //   permanent: false,
-      //   locale: false,
+
       // },
     ];
   },
