@@ -77,11 +77,55 @@
     "sales_flow_url": "https://solar.otovo.com/nb"
   },
   {
+    "slug": "otovo-no",
+    "market": "no",
+    "market_name": "Otovo NO",
+    "type": "OWN_AND_OPERATE",
+    "locale": "nb",
+    "domain": "no",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-no/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-no/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/nb"
+  },
+  {
+    "slug": "otovo-no",
+    "market": "no",
+    "market_name": "Otovo NO",
+    "type": "OWN_AND_OPERATE",
+    "locale": "no",
+    "domain": "no",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-no/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-no/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/nb"
+  },
+  {
     "slug": "otovo-se",
     "market": "se",
     "market_name": "Otovo SE",
     "type": "OWN_AND_OPERATE",
     "locale": "sv-se",
+    "domain": "se",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-se/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-se/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/sv"
+  },
+  {
+    "slug": "otovo-se",
+    "market": "se",
+    "market_name": "Otovo SE",
+    "type": "OWN_AND_OPERATE",
+    "locale": "se",
+    "domain": "se",
+    "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-se/otovo.ico",
+    "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-se/otovo.png",
+    "sales_flow_url": "https://solar.otovo.com/sv"
+  },
+  {
+    "slug": "otovo-se",
+    "market": "se",
+    "market_name": "Otovo SE",
+    "type": "OWN_AND_OPERATE",
+    "locale": "sv",
     "domain": "se",
     "favicon": "https://otovocloud.s3.amazonaws.com/business_unit_favicons/otovo-se/otovo.ico",
     "logo": "https://otovocloud.s3.amazonaws.com/business_unit_logos/otovo-se/otovo.png",
