@@ -18,10 +18,13 @@ export default function middleware(req: NextRequest) {
 
   if (!pathname.includes(".") && !pathname.startsWith("/api")) {
     if (pathname === "/") {
-      url.pathname = `/redirectHere`;
-      console.log("will rewrite to", JSON.stringify(url));
+      url.pathname = `/_sites/redirectHere`;
+      console.log("1: will rewrite to", JSON.stringify(url));
       return NextResponse.rewrite(url);
     }
+    url.pathname = `/_sites${pathname}`;
+    console.log("2: will rewrite to", JSON.stringify(url));
+    return NextResponse.rewrite(url);
   }
   return NextResponse.next();
 }
