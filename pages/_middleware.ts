@@ -8,6 +8,28 @@ const PUBLIC_FILE = /\.(.*)$/;
 //   return stripped;
 // };
 
+const lookup = {
+  nb: "nb-no",
+  fallback: "fr-fr",
+};
+
+function getLocaleFromPath(pathname: string) {
+  return pathname.split("/").filter(Boolean);
+}
+
+function figureOutLocaleAndStripPath(locale: string, pathname: string) {
+  if (locale === "default") {
+    const pathSegments = getLocaleFromPath(pathname);
+    const properLocale =
+      pathSegments[0] === "nb" ? lookup[pathSegments[0]] : lookup["fallback"];
+
+    return {
+      pathname: pathSegments.slice(1),
+      locale: properLocale,
+    };
+  }
+}
+
 export default function middleware(req: NextRequest) {
   const url = req.nextUrl.clone(); // clone the request url
   const { locale, pathname, hostname: nextHost } = req.nextUrl; // get pathname of request (e.g. /products/:id)
@@ -30,15 +52,17 @@ export default function middleware(req: NextRequest) {
     `\n Will handle locale: ${shouldHandleLocale}`
   );
 
-  const buConfig = config
-    .filter((bu) => ["OWN_AND_OPERATE", "WHITE_LABEL"].includes(bu.type))
-    .find((bu) => bu.locale === locale);
-
-  console.log("found bu", buConfig);
-
   if (!pathname.includes(".") && !pathname.startsWith("/api")) {
+    const detectedStuff = figureOutLocaleAndStripPath(locale, pathname);
+
+    const buConfig = config
+      .filter((bu) => ["OWN_AND_OPERATE", "WHITE_LABEL"].includes(bu.type))
+      .find((bu) => bu.locale === detectedStuff?.locale);
+
+    console.log("found bu", buConfig);
+
     if (pathname === "/") {
-      url.pathname = `/_sites/redirectHere`;
+      url.pathname = `/${detectedStuff?.locale}/_sites/redirectHere`;
       console.log("1: will rewrite to", JSON.stringify(url));
       return NextResponse.rewrite(url);
     }
@@ -48,7 +72,7 @@ export default function middleware(req: NextRequest) {
       return NextResponse.redirect(url);
     }
 
-    url.pathname = `/_sites/${buConfig.slug}${pathname}`;
+    url.pathname = `/${detectedStuff?.locale}/_sites/${buConfig.slug}${detectedStuff?.pathname}`;
     console.log("2: will rewrite to", JSON.stringify(url));
     return NextResponse.rewrite(url);
   }
